@@ -50,6 +50,9 @@ class Owner
     self.dogs.each {|dog| dog.owner = nil; dog.mood = "nervous"}
     self.cats.each {|cat| cat.owner = nil; cat.mood = "nervous"}
   end
+  def list_pets
+    "I have #{self.dogs} dog(s), and #{self.cats} cat(s)."
+  
 end
 
 
