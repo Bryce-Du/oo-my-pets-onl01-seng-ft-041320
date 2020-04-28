@@ -20,4 +20,8 @@ class Owner
   def Owner.count
     @@all.length
   end
+  
+  def Owner.reset_all
+    @@all.clear
+  end
 end
