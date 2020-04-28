@@ -38,6 +38,10 @@ class Owner
   def buy_dog (dog_name)
     dog = Dog.new(dog_name, self)
   end
+  
+  def walk_dogs
+    self.dogs.each {|dog| dog.mood = "happy"}
+  end
 end
 
 
